@@ -1,0 +1,204 @@
+:root {
+  --branco: white;
+  --azul: rgb(0, 0, 163);
+  --cinza: #aaa;
+  --cinzaEscuro: rgb(73, 73, 73);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--branco);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+table {
+  margin:0 auto;
+  width: 80%;
+  color: var(--cinza);
+}
+table th,
+table td {
+  padding: 0.2em 0.8em;
+  width: 20px;
+}
+table caption {
+  border-bottom: none;
+  text-align: start;
+  padding: 0.2em 0.8em;
+}
+table thead {
+  text-align: left;
+}
+
+header .container-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  background: var(--azul);
+  color: var(--branco);
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 10%;
+    background: var(--azul);
+    margin-top: 10px;
+}
+
+thead tr th img {
+    background: var(--azul);
+}
+
+footer {
+    background: var(--cinzaEscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer nav {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  
+footer nav a {
+    color: var(--cinza);
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+footer a {
+    color: white;
+    padding-bottom: 50px;
+}
+  
+  
+
+/** dropdown menu **/
+
+.header-nav {
+  width: 100%;
+  height: 50%;
+  background: var(--branco);
+  padding-right: 10%;
+}
+
+.header-nav > ul {
+  display: flex;
+  justify-content: end;
+}
+
+.header-nav ul {
+  list-style: none;
+  position: relative;
+}
+
+.header-nav ul li {
+  width: 150px;
+}
+
+.header-nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--cinza);
+}
+
+.header-nav ul li ul li a {
+  background: var(--azul);
+  color: var(--branco);
+}
+
+.header-nav ul ul {
+  position: absolute;
+  visibility: visible;
+  z-index: 1;
+}
+
+/** main container **/
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.main-article {
+    color: var(--cinza);
+}
+
+.main-panel table {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.main-panel table tr th {
+  padding-left: 50px;
+}
+
+.main-panel table tr td {
+  padding-left: 50px;
+}
+
+
+.teste:hover .teste1 {
+  display: block;
+  z-index: 10;
+}
+
+.teste1 {
+  display: none;
+}
+
+.teste2 {
+    display: none;
+}
+
+.teste1 li:last-child:hover .teste2 {
+    display: block;
+    z-index: 10;
+    padding-left: 100%;
+    margin-top: -25%;
+    position:absolute;
+  }
+
+.list-article {
+  padding-left: 16px;
+}
+
+.container-top a {
+    padding-right: 16%
+}
+
+.main {
+    margin: 0 auto;
+}
+
+#slider {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider-main {
+    background: grey;
+}
+
+.main-img-content img {
+    background: var(--azul);
+}
